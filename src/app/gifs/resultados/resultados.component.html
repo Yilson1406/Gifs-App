@@ -1,1 +1,12 @@
-<p>resultados works!</p>
+<div class="row">
+  <div *ngFor="let item of resultado" class="animate__bounceIn col-md-4 col-sm-6">
+    <div  class="card">
+      <div class="card-body">
+        <img class="card-img-top" [src]="item.images.downsized_medium.url" alt="">
+        <p class="card-text">
+          {{item.title}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
